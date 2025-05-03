@@ -5,14 +5,25 @@
   |============================
 */
 /* Common styles */
+
 @import url('./reset.css');
-@import url('./base.css');
-@import url('./container.css');
-@import url('./animations.css');
+@import url('./normalize.css');
+@import url('./variables.scss');
+@import url('./base.scss');
+@import url('./container.scss');
 
 /* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
-@import url('./footer.css');
+
+@import url('./button-buy-now.scss');
+@import url('./nav.scss');
+@import url('./header.scss');
+@import url('./hero.scss');
+@import url('./products.scss');
+@import url('./product.scss');
+@import url('./made.scss');
+@import url('./reviews.scss');
+@import url('./locations.scss');
+@import url('./location.scss');
+@import url('./footer.scss');
+@import url('./mob-menu.scss');
+
