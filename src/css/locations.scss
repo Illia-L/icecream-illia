@@ -6,8 +6,8 @@
   background-image: linear-gradient(var(--color-light-pink));
   background-position: center top 303px;
   background-repeat: no-repeat;
-  scroll-margin-top: 100px;  
-  
+  scroll-margin-top: 100px;
+
   @media (min-width: $screen-tab) {
     background-position: center top 298px;
   }
@@ -69,6 +69,11 @@
       color: #fff;
       background-color: #d41342;
       stroke: #fff;
+      transition: background-color var(--transition);
+
+      &:hover {
+        background-color: var(--color-red-10);
+      }
     }
 
     &--white {
@@ -190,7 +195,7 @@
       border-radius: 50%;
       background-color: #fea5bb;
       transition: background-color var(--transition);
-  
+
       &:hover {
         background-color: var(--color-red);
       }
@@ -228,6 +233,11 @@
 
     &-link {
       color: var(--color-red);
+      transition: color 200ms linear;
+
+      &:hover {
+        color: var(--color-red-10);
+      }
     }
   }
 }

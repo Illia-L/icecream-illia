@@ -17,6 +17,10 @@
   background-position: right calc((100vw - 320px) / 2 + 32px) bottom, center;
   background-repeat: no-repeat;
 
+  @media (min-resolution: 192dpi) {
+    background-image: url('../img/hero/icecream-mob-2x.webp');
+  }
+
   @media (min-width: 768px) {
     margin-top: -97px;
     padding-top: 92px;
@@ -30,6 +34,10 @@
       );
     background-size: 143px 336px, 100% 100%;
     background-position: left calc((100vw - 768px) / 2 + 322px) bottom, center;
+
+    @media (min-resolution: 192dpi) {
+      background-image: url('../img/hero/icecream-tab-2x.webp');
+    }
   }
 
   @media (min-width: 1200px) {
@@ -44,6 +52,10 @@
       );
     background-size: 236px 557px, 100% 100%;
     background-position: right calc((100vw - 1200px) / 2 + 328px) bottom, center;
+
+    @media (min-resolution: 192dpi) {
+      background-image: url('../img/hero/icecream-2x.webp');
+    }
   }
 
   @media (min-width: $screen-tab) {
@@ -139,6 +151,10 @@
     align-items: center;
     height: 44px;
 
+    &:hover &-visual--products {
+      background-color: var(--color-red-10);
+    }
+
     &:hover &-visual--made {
       background-color: var(--color-grey);
     }
@@ -158,6 +174,7 @@
       &--products {
         color: #fff;
         background-color: var(--color-red);
+        transition: background-color var(--transition);
       }
 
       &--made {
@@ -312,6 +329,10 @@
         margin-top: 20px;
         transform: translate(-9px, -9px);
       }
+
+      &:hover .hero-cta-visual {
+        transform: scale(1.1);
+      }
     }
 
     &-visual {
@@ -322,6 +343,7 @@
         height: 18px;
         background-image: url('../img/hero/arrow-2x.webp');
         background-size: cover;
+        transition: transform 200ms linear;
       }
 
       @media (min-width: 1200px) {

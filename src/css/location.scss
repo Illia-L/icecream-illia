@@ -141,6 +141,7 @@ html {
       font-size: 12px;
       font-weight: 500;
       color: var(--color-brown);
+      transition: color 200ms linear;
 
       @media (min-width: $screen-tab) {
         line-height: 1.83;
@@ -150,6 +151,10 @@ html {
       @media (min-width: $screen-desk) {
         font-size: 16px;
       };
+
+      &:hover {
+        color: var(--color-red);
+      }
     }
   }
 }
