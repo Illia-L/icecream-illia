@@ -6,7 +6,7 @@
 */
 /* Common styles */
 
-@import url('./reset.css');
+@import url('./reset.scss');
 @import url('./normalize.css');
 @import url('./variables.scss');
 @import url('./base.scss');
