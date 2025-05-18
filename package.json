@@ -1,11 +1,11 @@
 {
-  "name": "vanilla-app-template",
+  "name": "icecream-illia",
   "private": true,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/vanilla-app-template/",
+    "build": "vite build --base=/icecream-illia/",
     "preview": "vite preview"
   },
   "devDependencies": {
